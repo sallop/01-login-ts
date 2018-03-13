@@ -51,6 +51,7 @@ class App extends React.Component<Props, State> {
             <Button 
               bsStyle="primary"
               className="btn-margin"
+              onClick={() => { this.goTo('home'); }}
               // onClick={this.goTo('home')}
             >
               Home
@@ -61,6 +62,7 @@ class App extends React.Component<Props, State> {
                     id="qsLoginBtn"
                     bsStyle="primary"
                     className="btn-margin"
+                    onClick={() => { this.login(); }}
                     // onClick={this.login()}
                   >
                     Log In
@@ -73,6 +75,7 @@ class App extends React.Component<Props, State> {
                     id="qsLogoutBtn"
                     bsStyle="primary"
                     className="btn-margin"
+                    onClick={() => { this.logout(); }}
                     // onClick={this.logout()}
                   >
                     Log Out
