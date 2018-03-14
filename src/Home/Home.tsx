@@ -35,7 +35,7 @@ class Home extends React.Component<Props, State> {
                 You are not logged in! Please{' '}
                 <a
                   style={{ cursor: 'pointer' }}
-                  // onClick={this.login()}
+                  onClick={() => { this.login(); }}
                 >
                   Log In
                 </a>
